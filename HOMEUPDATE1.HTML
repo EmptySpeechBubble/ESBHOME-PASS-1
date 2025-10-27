@@ -1459,12 +1459,13 @@
       padding: 20px !important;
       border: 3px double #00ffff !important;
       margin: 10px !important;
-      background: #000033 !important;
+      background: #000000 !important;
       position: relative !important;
     }
 
     .bird-box-front {
       border-color: #ff00ff !important;
+      background: #000000 !important;
     }
 
     .bird-box-title {
@@ -1472,16 +1473,17 @@
       font-family: "Impact", fantasy !important;
       font-size: 32px !important;
       color: #ffff00 !important;
-      text-shadow: 3px 3px #ff00ff, -2px -2px #00ffff !important;
+      text-shadow: 3px 3px 0 #000000, -2px -2px 0 #000000, 2px 2px 8px #ff00ff !important;
       letter-spacing: 4px !important;
       margin: 15px 0 !important;
+      padding: 10px !important;
       animation: color-shift 3s infinite !important;
     }
 
     @keyframes color-shift {
-      0%, 100% { color: #ffff00; text-shadow: 3px 3px #ff00ff, -2px -2px #00ffff; }
-      33% { color: #ff00ff; text-shadow: 3px 3px #00ffff, -2px -2px #ffff00; }
-      66% { color: #00ffff; text-shadow: 3px 3px #ffff00, -2px -2px #ff00ff; }
+      0%, 100% { color: #ffff00; text-shadow: 3px 3px 0 #000000, -2px -2px 0 #000000, 2px 2px 8px #ff00ff; }
+      33% { color: #ff00ff; text-shadow: 3px 3px 0 #000000, -2px -2px 0 #000000, 2px 2px 8px #00ffff; }
+      66% { color: #00ffff; text-shadow: 3px 3px 0 #000000, -2px -2px 0 #000000, 2px 2px 8px #ffff00; }
     }
 
     .bird-box-subtitle {
@@ -1490,7 +1492,9 @@
       font-size: 16px !important;
       color: #00ff00 !important;
       margin: 10px 0 !important;
+      padding: 5px !important;
       letter-spacing: 2px !important;
+      text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 0 0 10px #00ff00 !important;
     }
 
     .bird-box-ascii {
@@ -1523,9 +1527,10 @@
       color: #ffffff !important;
       font-size: 13px !important;
       margin: 15px 20px !important;
-      padding: 10px !important;
+      padding: 15px !important;
       border-left: 3px solid #00ffff !important;
-      background: rgba(0, 255, 255, 0.1) !important;
+      background: #001a1a !important;
+      text-shadow: 1px 1px 0 #000000, 0 0 5px rgba(0, 255, 255, 0.5) !important;
     }
 
     .bird-requirements {
@@ -1562,7 +1567,8 @@
       font-family: "Impact", fantasy !important;
       font-size: 18px !important;
       margin: 10px 0 !important;
-      text-shadow: 2px 2px #000000 !important;
+      padding: 5px !important;
+      text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 0 0 8px #ff00ff !important;
     }
 
     .bird-features-section ul {
@@ -1570,6 +1576,7 @@
       margin-left: 10px !important;
       color: #ffffff !important;
       font-size: 13px !important;
+      text-shadow: 1px 1px 0 #000000 !important;
     }
 
     .bird-features-section li {
@@ -1610,8 +1617,8 @@
       font-size: 24px !important;
       color: #ffffff !important;
       text-decoration: none !important;
-      text-shadow: 3px 3px #000000 !important;
-      padding: 10px 20px !important;
+      text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 0 0 10px #00ffff !important;
+      padding: 15px 30px !important;
       display: inline-block !important;
       background: #000000 !important;
       border: 3px outset #ffffff !important;
@@ -1824,15 +1831,15 @@ SQUIRREL SAYS HI
                 WITNESS THE MIRACLE OF NATURE... RIGHT ON YOUR DESKTOP!
               </div>
 
-              <p style="color: #ffffff; text-align: center; margin: 15px 0; font-size: 14px;">
+              <p style="color: #ffffff; text-align: center; margin: 15px 0; font-size: 14px; text-shadow: 1px 1px 0 #000000; padding: 10px;">
                 Transform your computer screen into a thriving garden ecosystem! Watch as birds build nests, squirrels gather food, and rare events unfold before your eyes. BIRD WINDOW isn't just a screensaver—it's a living, breathing world that runs while you work!
               </p>
 
               <div class="bird-features-section">
                 <h3>🌟 INCREDIBLE FEATURES:</h3>
 
-                <div style="margin-left: 15px; color: #00ffff; font-size: 13px;">
-                  <p style="margin: 10px 0;"><strong style="color: #ff00ff;">ADVANCED ECOSYSTEM SIMULATION</strong></p>
+                <div style="margin-left: 15px; color: #00ffff; font-size: 13px; text-shadow: 1px 1px 0 #000000;">
+                  <p style="margin: 10px 0; padding: 5px;"><strong style="color: #ff00ff; text-shadow: 1px 1px 0 #000000, 0 0 6px #ff00ff;">ADVANCED ECOSYSTEM SIMULATION</strong></p>
                   <ul style="font-size: 12px; margin-left: 20px;">
                     <li>Over 15+ species of wildlife including Cardinals, Sparrows, Blue Jays, and more!</li>
                     <li>REAL-TIME behavior AI - creatures react to weather, time of day, and each other!</li>
@@ -1840,7 +1847,7 @@ SQUIRREL SAYS HI
                     <li>Seasonal variations and day/night cycles with stunning visual transitions</li>
                   </ul>
 
-                  <p style="margin: 10px 0;"><strong style="color: #ff00ff;">SPECTACULAR RARE EVENTS</strong></p>
+                  <p style="margin: 10px 0; padding: 5px;"><strong style="color: #ff00ff; text-shadow: 1px 1px 0 #000000, 0 0 6px #ff00ff;">SPECTACULAR RARE EVENTS</strong></p>
                   <ul style="font-size: 12px; margin-left: 20px;">
                     <li>🌙 SOLAR ECLIPSE - Experience the awe as the sky darkens!</li>
                     <li>☄️ METEOR SHOWERS - Watch shooting stars streak across the night!</li>
@@ -1849,7 +1856,7 @@ SQUIRREL SAYS HI
                     <li>🌈 DOUBLE RAINBOWS - Ultra-rare spectacle after storms!</li>
                   </ul>
 
-                  <p style="margin: 10px 0;"><strong style="color: #ff00ff;">INTERACTIVE ELEMENTS</strong></p>
+                  <p style="margin: 10px 0; padding: 5px;"><strong style="color: #ff00ff; text-shadow: 1px 1px 0 #000000, 0 0 6px #ff00ff;">INTERACTIVE ELEMENTS</strong></p>
                   <ul style="font-size: 12px; margin-left: 20px;">
                     <li>Click to scatter bird seed and watch creatures respond!</li>
                     <li>Lock-on camera follows your favorite animals!</li>
@@ -1858,7 +1865,7 @@ SQUIRREL SAYS HI
                     <li>Watch baby birds hatch and grow to adulthood!</li>
                   </ul>
 
-                  <p style="margin: 10px 0;"><strong style="color: #ff00ff;">SECRET UNLOCKABLES</strong></p>
+                  <p style="margin: 10px 0; padding: 5px;"><strong style="color: #ff00ff; text-shadow: 1px 1px 0 #000000, 0 0 6px #ff00ff;">SECRET UNLOCKABLES</strong></p>
                   <ul style="font-size: 12px; margin-left: 20px;">
                     <li>🍄 Find the MAGIC MUSHROOM to unlock PSYCHEDELIC MODE!</li>
                     <li>Hidden GameBoy™ easter egg with playable games!</li>
