@@ -1430,6 +1430,206 @@
     .radial-bg {
       background: radial-gradient(circle, #660066, #330033) !important;
     }
+
+    /* Bird Window Feature Box Styles */
+    .bird-window-feature {
+      margin: 20px auto !important;
+      padding: 0 !important;
+      max-width: 800px !important;
+      border: 5px solid #ffff00 !important;
+      box-shadow: 0 0 20px #00ffff, inset 0 0 20px rgba(255, 255, 0, 0.3) !important;
+      background: linear-gradient(135deg, #000066 0%, #660066 50%, #000066 100%) !important;
+      transform: rotate(-1deg) !important;
+      position: relative !important;
+      animation: float-gentle 6s ease-in-out infinite !important;
+    }
+
+    @keyframes float-gentle {
+      0%, 100% { transform: rotate(-1deg) translateY(0px); }
+      50% { transform: rotate(-1deg) translateY(-10px); }
+    }
+
+    .bird-window-feature:hover {
+      transform: rotate(0deg) scale(1.02) !important;
+      box-shadow: 0 0 30px #ffff00, inset 0 0 30px rgba(255, 255, 0, 0.5) !important;
+    }
+
+    .bird-box-front,
+    .bird-box-back {
+      padding: 20px !important;
+      border: 3px double #00ffff !important;
+      margin: 10px !important;
+      background: #000000 !important;
+      position: relative !important;
+    }
+
+    .bird-box-front {
+      border-color: #ff00ff !important;
+      background: #000000 !important;
+    }
+
+    .bird-box-title {
+      text-align: center !important;
+      font-family: "Impact", fantasy !important;
+      font-size: 32px !important;
+      color: #ffff00 !important;
+      text-shadow: 3px 3px 0 #000000, -2px -2px 0 #000000, 2px 2px 8px #ff00ff !important;
+      letter-spacing: 4px !important;
+      margin: 15px 0 !important;
+      padding: 10px !important;
+      animation: color-shift 3s infinite !important;
+    }
+
+    @keyframes color-shift {
+      0%, 100% { color: #ffff00; text-shadow: 3px 3px 0 #000000, -2px -2px 0 #000000, 2px 2px 8px #ff00ff; }
+      33% { color: #ff00ff; text-shadow: 3px 3px 0 #000000, -2px -2px 0 #000000, 2px 2px 8px #00ffff; }
+      66% { color: #00ffff; text-shadow: 3px 3px 0 #000000, -2px -2px 0 #000000, 2px 2px 8px #ffff00; }
+    }
+
+    .bird-box-subtitle {
+      text-align: center !important;
+      font-family: "Arial", sans-serif !important;
+      font-size: 16px !important;
+      color: #00ff00 !important;
+      margin: 10px 0 !important;
+      padding: 5px !important;
+      letter-spacing: 2px !important;
+      text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 0 0 10px #00ff00 !important;
+    }
+
+    .bird-box-ascii {
+      font-family: "Courier New", monospace !important;
+      font-size: 12px !important;
+      color: #00ffff !important;
+      white-space: pre !important;
+      text-align: center !important;
+      line-height: 1.2 !important;
+      margin: 15px 0 !important;
+      background: #000000 !important;
+      padding: 10px !important;
+      border: 2px solid #00ffff !important;
+    }
+
+    .bird-award {
+      text-align: center !important;
+      color: #ffff00 !important;
+      font-size: 14px !important;
+      margin: 10px 0 !important;
+      padding: 5px !important;
+      background: #660000 !important;
+      border: 2px solid #ffff00 !important;
+      animation: blink 2s infinite !important;
+    }
+
+    .bird-quote {
+      text-align: center !important;
+      font-style: italic !important;
+      color: #ffffff !important;
+      font-size: 13px !important;
+      margin: 15px 20px !important;
+      padding: 15px !important;
+      border-left: 3px solid #00ffff !important;
+      background: #001a1a !important;
+      text-shadow: 1px 1px 0 #000000, 0 0 5px rgba(0, 255, 255, 0.5) !important;
+    }
+
+    .bird-requirements {
+      background: #000000 !important;
+      padding: 15px !important;
+      border: 2px dashed #00ff00 !important;
+      margin: 15px 0 !important;
+      font-family: "Courier New", monospace !important;
+      font-size: 12px !important;
+      color: #00ff00 !important;
+    }
+
+    .bird-requirements strong {
+      color: #ffff00 !important;
+      font-size: 14px !important;
+    }
+
+    .bird-requirements ul {
+      list-style: none !important;
+      margin-left: 20px !important;
+    }
+
+    .bird-requirements li:before {
+      content: "• " !important;
+      color: #ff00ff !important;
+    }
+
+    .bird-features-section {
+      margin: 15px 0 !important;
+    }
+
+    .bird-features-section h3 {
+      color: #ff00ff !important;
+      font-family: "Impact", fantasy !important;
+      font-size: 18px !important;
+      margin: 10px 0 !important;
+      padding: 5px !important;
+      text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 0 0 8px #ff00ff !important;
+    }
+
+    .bird-features-section ul {
+      list-style: none !important;
+      margin-left: 10px !important;
+      color: #ffffff !important;
+      font-size: 13px !important;
+      text-shadow: 1px 1px 0 #000000 !important;
+    }
+
+    .bird-features-section li {
+      margin: 5px 0 !important;
+      padding-left: 20px !important;
+      position: relative !important;
+    }
+
+    .bird-features-section li:before {
+      content: "★" !important;
+      position: absolute !important;
+      left: 0 !important;
+      color: #ffff00 !important;
+      animation: spin 2s linear infinite !important;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .bird-cta {
+      text-align: center !important;
+      margin: 20px 0 !important;
+      padding: 15px !important;
+      background: linear-gradient(90deg, #ff00ff, #00ffff) !important;
+      border: 3px solid #ffff00 !important;
+      animation: pulse-border 2s infinite !important;
+    }
+
+    @keyframes pulse-border {
+      0%, 100% { border-color: #ffff00; box-shadow: 0 0 10px #ffff00; }
+      50% { border-color: #ff00ff; box-shadow: 0 0 20px #ff00ff; }
+    }
+
+    .bird-cta a {
+      font-family: "Impact", fantasy !important;
+      font-size: 24px !important;
+      color: #ffffff !important;
+      text-decoration: none !important;
+      text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 0 0 10px #00ffff !important;
+      padding: 15px 30px !important;
+      display: inline-block !important;
+      background: #000000 !important;
+      border: 3px outset #ffffff !important;
+      transition: all 0.3s !important;
+    }
+
+    .bird-cta a:hover {
+      transform: scale(1.1) rotate(-2deg) !important;
+      background: #660066 !important;
+      box-shadow: 0 0 20px #ffff00 !important;
+    }
   </style>
 </head>
 <body class="background-sparkle custom-cursor">
@@ -1578,6 +1778,114 @@ SQUIRREL SAYS HI
 
           <marquee scrollamount="5" direction="right" class="marquee-rainbow">
             <span class="text-3d font-impact">⋆｡˚☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★☆ ★ ☆ ★☆｡˚⋆</span>
+          </marquee>
+
+          <hr>
+
+          <!-- *** FEATURED: BIRD WINDOW *** -->
+          <div class="bird-window-feature" id="bird-window-featured">
+            <!-- Front of Box -->
+            <div class="bird-box-front">
+              <div class="bird-box-title">
+                🪟 BIRD WINDOW™ 🪟
+              </div>
+              <div class="bird-box-subtitle">
+                The Ultimate Virtual Nature Sanctuary Experience
+              </div>
+
+              <div class="bird-box-ascii">╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║          🪟  B I R D   W I N D O W  🪟                      ║
+║                                                              ║
+║        Your Desktop Portal to a Living Ecosystem!           ║
+║                                                              ║
+║              Powered by NATURE ENGINE™ 2.0                  ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝</div>
+
+              <div class="bird-award">
+                ⭐ WINNER - Best Ambient Software 1997 ⭐
+              </div>
+
+              <div class="bird-quote">
+                "It's like having a window to nature on your desktop!"<br>
+                - PC Gamer Magazine
+              </div>
+
+              <div class="bird-requirements">
+                <strong>SYSTEM REQUIREMENTS:</strong>
+                <ul>
+                  <li>486 DX2/66 MHz or higher</li>
+                  <li>8 MB RAM (16 MB recommended)</li>
+                  <li>SVGA graphics (640x480, 256 colors)</li>
+                  <li>Sound Blaster compatible sound card</li>
+                  <li>Hard Drive space: 15 MB</li>
+                  <li>Windows 95/98 or Mac OS 7.5+</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Back of Box -->
+            <div class="bird-box-back">
+              <div class="bird-box-title" style="font-size: 20px !important;">
+                WITNESS THE MIRACLE OF NATURE... RIGHT ON YOUR DESKTOP!
+              </div>
+
+              <p style="color: #ffffff; text-align: center; margin: 15px 0; font-size: 14px; text-shadow: 1px 1px 0 #000000; padding: 10px;">
+                Transform your computer screen into a thriving garden ecosystem! Watch as birds build nests, squirrels gather food, and rare events unfold before your eyes. BIRD WINDOW isn't just a screensaver—it's a living, breathing world that runs while you work!
+              </p>
+
+              <div class="bird-features-section">
+                <h3>🌟 INCREDIBLE FEATURES:</h3>
+
+                <div style="margin-left: 15px; color: #00ffff; font-size: 13px; text-shadow: 1px 1px 0 #000000;">
+                  <p style="margin: 10px 0; padding: 5px;"><strong style="color: #ff00ff; text-shadow: 1px 1px 0 #000000, 0 0 6px #ff00ff;">ADVANCED ECOSYSTEM SIMULATION</strong></p>
+                  <ul style="font-size: 12px; margin-left: 20px;">
+                    <li>Over 15+ species of wildlife including Cardinals, Sparrows, Blue Jays, and more!</li>
+                    <li>REAL-TIME behavior AI - creatures react to weather, time of day, and each other!</li>
+                    <li>Dynamic food chain system - watch nature's drama unfold!</li>
+                    <li>Seasonal variations and day/night cycles with stunning visual transitions</li>
+                  </ul>
+
+                  <p style="margin: 10px 0; padding: 5px;"><strong style="color: #ff00ff; text-shadow: 1px 1px 0 #000000, 0 0 6px #ff00ff;">SPECTACULAR RARE EVENTS</strong></p>
+                  <ul style="font-size: 12px; margin-left: 20px;">
+                    <li>🌙 SOLAR ECLIPSE - Experience the awe as the sky darkens!</li>
+                    <li>☄️ METEOR SHOWERS - Watch shooting stars streak across the night!</li>
+                    <li>🛸 UFO ENCOUNTERS - EXCLUSIVE FEATURE! Mysterious visitors may appear...</li>
+                    <li>🦅 MIGRATION WAVES - Flocks of 10-15 birds in perfect V-formation!</li>
+                    <li>🌈 DOUBLE RAINBOWS - Ultra-rare spectacle after storms!</li>
+                  </ul>
+
+                  <p style="margin: 10px 0; padding: 5px;"><strong style="color: #ff00ff; text-shadow: 1px 1px 0 #000000, 0 0 6px #ff00ff;">INTERACTIVE ELEMENTS</strong></p>
+                  <ul style="font-size: 12px; margin-left: 20px;">
+                    <li>Click to scatter bird seed and watch creatures respond!</li>
+                    <li>Lock-on camera follows your favorite animals!</li>
+                    <li>Wind chimes react to creature movement with REAL AUDIO!</li>
+                    <li>Build and maintain birdhouses, nests, and feeders</li>
+                    <li>Watch baby birds hatch and grow to adulthood!</li>
+                  </ul>
+
+                  <p style="margin: 10px 0; padding: 5px;"><strong style="color: #ff00ff; text-shadow: 1px 1px 0 #000000, 0 0 6px #ff00ff;">SECRET UNLOCKABLES</strong></p>
+                  <ul style="font-size: 12px; margin-left: 20px;">
+                    <li>🍄 Find the MAGIC MUSHROOM to unlock PSYCHEDELIC MODE!</li>
+                    <li>Hidden GameBoy™ easter egg with playable games!</li>
+                    <li>Rare "Rat King" formation event</li>
+                    <li>Giant glowing ants transformed by UFO encounters!</li>
+                    <li>100+ diary entries documenting your ecosystem's story</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bird-cta">
+                <a href="https://www.emptyspeechbubble.com/window" target="_blank">
+                  🐦 EXPERIENCE BIRD WINDOW NOW! 🐦
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <marquee scrollamount="4" direction="left" class="marquee-rainbow" style="margin: 20px 0;">
+            <span class="text-3d font-courier">🌲🐦 BIRD WINDOW - Where Nature Meets Technology! 🐦🌲</span>
           </marquee>
 
           <hr>
